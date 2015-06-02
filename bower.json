@@ -1,0 +1,20 @@
+{
+  "name": "Portfolio",
+  "version": "0.0.0",
+  "authors": [
+    "MarquesDev <marques.developpement@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.3.0"
+  }
+}

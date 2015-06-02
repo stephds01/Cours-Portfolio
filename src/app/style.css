@@ -1,0 +1,195 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+.pushed {
+    width: calc(100% - 200px) !important;
+}
+
+#container {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transition: all .5s ease;
+    background-color: #fff;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Banner
+|--------------------------------------------------------------------------
+*/
+
+.banner-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/porfolio.jpg");
+    background-size: cover;
+    display: flex;
+    position: relative; /*pour positionner le header*/
+}
+
+.banner-content {
+    width: 700px;
+    margin: auto;
+    display: block;
+}
+
+.banner-content-text {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.banner-content-buttons {
+    text-align: center;
+}
+
+.banner-content-buttons button:last-child {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0;
+}
+
+.banner-content-buttons button {
+    background: #e74c3c;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    padding: 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/********************* FORMATION ***********************/
+.formation-container {
+    width: 100%;
+    height: 500px;
+    background-color: #F8F8F8;
+    display: flex;
+}
+
+.formation-header {
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+.formation-title {
+    display: inline-block;
+    width: 600px;
+    height: 60px;
+    position: absolute;
+    top: 60px;
+    right: 50%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Header
+|--------------------------------------------------------------------------
+*/
+
+.header {
+    z-index: 2;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+.header-menu {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.header-menu:hover {
+    background-color: #E74C3C;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Tabs
+|--------------------------------------------------------------------------
+*/
+
+.tabs-container {
+    padding: 50px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #292F36;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-container > div {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.tabs-container > div span {
+    float: right;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Progress
+|--------------------------------------------------------------------------
+*/
+
+.progress-container {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar-container {
+    margin-top: 40px;
+    width: 500px;
+}
+
+.progress-bar {
+    max-width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+.bar {
+    width: 50%;
+    height: 30px;
+    background-color: #65AEEC;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
